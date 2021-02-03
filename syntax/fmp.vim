@@ -7,19 +7,20 @@
 " 	finish
 " endif
 
-" Numbers
-syntax match fmNumeric '\<-\?[1-9]\d*\(.[0-9]\+\)\?\>'
-
 " Comments
 syntax match fmScriptComment '#\s.*'
 syntax match fmFunctionComment '\/\/.*$'
 syntax region fmFunctionCommentMultiLine start='\/\*' end='\*\/'
 
+" Numbers
+syntax match fmNumeric '-\?[1-9]\d*\(.[0-9]\+\)\?\>'
+
 " Operators
-syntax match fmOperatorArithmetic '\(+\|-\|*\|\/\)'
+" syntax match fmOperatorArithmetic '\(+\|-\|*\|\/\)'
+syntax match fmOperatorArithmetic '\(+\|-\|*\)'
 syntax match fmOperatorLogical '\<\(xor\|and\|or\|not\)\>'
 syntax match fmOperatorComparison '\(=\|<=\|≤\|>=\|≥\|<>\|!=\|≠\|<\|>\)'
-syntax keyword fmOperatorString &
+syntax match fmOperatorString '&'
 
 " Variables/Identifiers
 syntax match fmScriptVariableLocal '\$[a-zA-Z_][a-zA-Z0-9_]*\>'
@@ -445,51 +446,51 @@ syntax keyword fmFunctionMobile LocationValues RangeBeacons
 
 let b:current_syntax = "fmp"
 
-hi def link fmScriptComment Comment
-hi def link fmFunctionComment Comment
-hi def link fmFunctionCommentMultiLine Comment
+hi def link fmScriptComment                Comment
+hi def link fmFunctionComment              Comment
+hi def link fmFunctionCommentMultiLine     Comment
 
-hi def link fmNumeric Number
+hi def link fmNumeric                      Number
 
-hi def link fmOperatorArithmetic Operator
-hi def link fmOperatorLogical Operator
-hi def link fmOperatorComparison Operator
-hi def link fmOperatorString Operator
+hi def link fmOperatorArithmetic           Operator
+hi def link fmOperatorLogical              Operator
+hi def link fmOperatorComparison           Operator
+hi def link fmOperatorString               Operator
 
-hi def link fmScriptVariableLocal Identifier
-hi def link fmScriptVariableGlobal Identifier
+hi def link fmScriptVariableLocal          Identifier
+hi def link fmScriptVariableGlobal         Identifier
 
 hi def link fmString String
 
-hi def link fmScriptControl Conditional
-hi def link fmScriptNavigation Statement
-hi def link fmScriptEditing Statement
-hi def link fmScriptFields Statement
-hi def link fmScriptRecords Statement
-hi def link fmScriptFoundSets Statement
-hi def link fmScriptWindows Statement
-hi def link fmScriptFiles Statement
-hi def link fmScriptAccounts Statement
-hi def link fmScriptSpelling Statement
-hi def link fmScriptOpenMenuItem Statement
-hi def link fmScriptMiscellaneous Statement
+hi def link fmScriptControl                Conditional
+hi def link fmScriptNavigation             Statement
+hi def link fmScriptEditing                Statement
+hi def link fmScriptFields                 Statement
+hi def link fmScriptRecords                Statement
+hi def link fmScriptFoundSets              Statement
+hi def link fmScriptWindows                Statement
+hi def link fmScriptFiles                  Statement
+hi def link fmScriptAccounts               Statement
+hi def link fmScriptSpelling               Statement
+hi def link fmScriptOpenMenuItem           Statement
+hi def link fmScriptMiscellaneous          Statement
 
-hi def link fmFunctionAggregate Function
-hi def link fmFunctionContainer Function
-hi def link fmFunctionDate Function
-hi def link fmFunctionDesign Function
-hi def link fmFunctionFinancial Function
-hi def link fmFunctionGet Statement
-hi def link fmFunctionGetConstant Function
-hi def link fmFunctionJSON Function
-hi def link fmFunctionJapanese Function
-hi def link fmFunctionLogical Function
-hi def link fmFunctionMiscellaneous Function
-hi def link fmFunctionMobile Function
-hi def link fmFunctionNumber Function
-hi def link fmFunctionRepeating Function
-hi def link fmFunctionTextFormatting Function
-hi def link fmFunctionTime Function
-hi def link fmFunctionTimestamp Function
-hi def link fmFunctionTrigonometric Function
+hi def link fmFunctionAggregate            Function
+hi def link fmFunctionContainer            Function
+hi def link fmFunctionDate                 Function
+hi def link fmFunctionDesign               Function
+hi def link fmFunctionFinancial            Function
+hi def link fmFunctionGet                  Statement
+hi def link fmFunctionGetConstant          Function
+hi def link fmFunctionJSON                 Function
+hi def link fmFunctionJapanese             Function
+hi def link fmFunctionLogical              Function
+hi def link fmFunctionMiscellaneous        Function
+hi def link fmFunctionMobile               Function
+hi def link fmFunctionNumber               Function
+hi def link fmFunctionRepeating            Function
+hi def link fmFunctionTextFormatting       Function
+hi def link fmFunctionTime                 Function
+hi def link fmFunctionTimestamp            Function
+hi def link fmFunctionTrigonometric        Function
 
