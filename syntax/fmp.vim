@@ -7,7 +7,7 @@ if exists("b:current_syntax")
 	finish
 endif
 
-" Script Steps
+" FileMaker Script Steps
 " Category Control
 syn match fmScriptControl 'Set Variable'
 syn match fmScriptControl 'Else If'
@@ -209,201 +209,201 @@ syn match fmScriptMiscellaneous 'Speak'
 
 " FileMaker Calculation Functions
 " Category Text
-syn keyword fmFunctionLogical 'Char'
-syn keyword fmFunctionLogical 'Code'
-syn keyword fmFunctionLogical 'Exact'
-syn keyword fmFunctionLogical 'Filter'
-syn keyword fmFunctionLogical 'FilterValues'
-syn keyword fmFunctionLogical 'GetAsCSS'
-syn keyword fmFunctionLogical 'GetAsDate'
-syn keyword fmFunctionLogical 'GetAsNumber'
-syn keyword fmFunctionLogical 'GetAsSVG'
-syn keyword fmFunctionLogical 'GetAsText'
-syn keyword fmFunctionLogical 'GetAsTime'
-syn keyword fmFunctionLogical 'GetAsTimestamp'
-syn keyword fmFunctionLogical 'GetAsURLEncoded'
-syn keyword fmFunctionLogical 'GetValue'
-syn keyword fmFunctionLogical 'Left'
-syn keyword fmFunctionLogical 'LeftValues'
-syn keyword fmFunctionLogical 'LeftWords'
-syn keyword fmFunctionLogical 'Length'
-syn keyword fmFunctionLogical 'Lower'
-syn keyword fmFunctionLogical 'Middle'
-syn keyword fmFunctionLogical 'MiddleValues'
-syn keyword fmFunctionLogical 'MiddleWords'
-syn keyword fmFunctionLogical 'PatternCount'
-syn keyword fmFunctionLogical 'Position'
-syn keyword fmFunctionLogical 'Proper'
-syn keyword fmFunctionLogical 'Quote'
-syn keyword fmFunctionLogical 'Replace'
-syn keyword fmFunctionLogical 'Right'
-syn keyword fmFunctionLogical 'RightValues'
-syn keyword fmFunctionLogical 'RightWords'
-syn keyword fmFunctionLogical 'SerialIncrement'
-syn keyword fmFunctionLogical 'SortValues'
-syn keyword fmFunctionLogical 'Substitute'
-syn keyword fmFunctionLogical 'Trim'
-syn keyword fmFunctionLogical 'TrimAll'
-syn keyword fmFunctionLogical 'UniqueValues'
-syn keyword fmFunctionLogical 'Upper'
-syn keyword fmFunctionLogical 'ValueCount'
-syn keyword fmFunctionLogical 'WordCount'
+syn keyword fmFunctionLogical Char
+syn keyword fmFunctionLogical Code
+syn keyword fmFunctionLogical Exact
+syn keyword fmFunctionLogical Filter
+syn keyword fmFunctionLogical FilterValues
+syn keyword fmFunctionLogical GetAsCSS
+syn keyword fmFunctionLogical GetAsDate
+syn keyword fmFunctionLogical GetAsNumber
+syn keyword fmFunctionLogical GetAsSVG
+syn keyword fmFunctionLogical GetAsText
+syn keyword fmFunctionLogical GetAsTime
+syn keyword fmFunctionLogical GetAsTimestamp
+syn keyword fmFunctionLogical GetAsURLEncoded
+syn keyword fmFunctionLogical GetValue
+syn keyword fmFunctionLogical Left
+syn keyword fmFunctionLogical LeftValues
+syn keyword fmFunctionLogical LeftWords
+syn keyword fmFunctionLogical Length
+syn keyword fmFunctionLogical Lower
+syn keyword fmFunctionLogical Middle
+syn keyword fmFunctionLogical MiddleValues
+syn keyword fmFunctionLogical MiddleWords
+syn keyword fmFunctionLogical PatternCount
+syn keyword fmFunctionLogical Position
+syn keyword fmFunctionLogical Proper
+syn keyword fmFunctionLogical Quote
+syn keyword fmFunctionLogical Replace
+syn keyword fmFunctionLogical Right
+syn keyword fmFunctionLogical RightValues
+syn keyword fmFunctionLogical RightWords
+syn keyword fmFunctionLogical SerialIncrement
+syn keyword fmFunctionLogical SortValues
+syn keyword fmFunctionLogical Substitute
+syn keyword fmFunctionLogical Trim
+syn keyword fmFunctionLogical TrimAll
+syn keyword fmFunctionLogical UniqueValues
+syn keyword fmFunctionLogical Upper
+syn keyword fmFunctionLogical ValueCount
+syn keyword fmFunctionLogical WordCount
 
 " Category TextFormatting
-syn keyword fmFunctionTextFormatting 'RGB'
-syn keyword fmFunctionTextFormatting 'TextColor'
-syn keyword fmFunctionTextFormatting 'TextColorRemove'
-syn keyword fmFunctionTextFormatting 'TextFont'
-syn keyword fmFunctionTextFormatting 'TextFontRemove'
-syn keyword fmFunctionTextFormatting 'TextFormatRemove'
-syn keyword fmFunctionTextFormatting 'TextSize'
-syn keyword fmFunctionTextFormatting 'TextSizeRemove'
-syn keyword fmFunctionTextFormatting 'TextStyleAdd'
-syn keyword fmFunctionTextFormatting 'TextStyleRemove'
+syn keyword fmFunctionTextFormatting RGB
+syn keyword fmFunctionTextFormatting TextColor
+syn keyword fmFunctionTextFormatting TextColorRemove
+syn keyword fmFunctionTextFormatting TextFont
+syn keyword fmFunctionTextFormatting TextFontRemove
+syn keyword fmFunctionTextFormatting TextFormatRemove
+syn keyword fmFunctionTextFormatting TextSize
+syn keyword fmFunctionTextFormatting TextSizeRemove
+syn keyword fmFunctionTextFormatting TextStyleAdd
+syn keyword fmFunctionTextFormatting TextStyleRemove
 
 " Category Number
-syn keyword fmFunctionNumber 'Abs'
-syn keyword fmFunctionNumber 'Ceiling'
-syn keyword fmFunctionNumber 'Combination'
-syn keyword fmFunctionNumber 'Div'
-syn keyword fmFunctionNumber 'Exp'
-syn keyword fmFunctionNumber 'Factorial'
-syn keyword fmFunctionNumber 'Floor'
-syn keyword fmFunctionNumber 'Int'
-syn keyword fmFunctionNumber 'Lg'
-syn keyword fmFunctionNumber 'Ln'
-syn keyword fmFunctionNumber 'Log'
-syn keyword fmFunctionNumber 'Mod'
-syn keyword fmFunctionNumber 'Random'
-syn keyword fmFunctionNumber 'Round'
-syn keyword fmFunctionNumber 'SetPrecision'
-syn keyword fmFunctionNumber 'Sign'
-syn keyword fmFunctionNumber 'Sqrt'
-syn keyword fmFunctionNumber 'Truncate'
+syn keyword fmFunctionNumber Abs
+syn keyword fmFunctionNumber Ceiling
+syn keyword fmFunctionNumber Combination
+syn keyword fmFunctionNumber Div
+syn keyword fmFunctionNumber Exp
+syn keyword fmFunctionNumber Factorial
+syn keyword fmFunctionNumber Floor
+syn keyword fmFunctionNumber Int
+syn keyword fmFunctionNumber Lg
+syn keyword fmFunctionNumber Ln
+syn keyword fmFunctionNumber Log
+syn keyword fmFunctionNumber Mod
+syn keyword fmFunctionNumber Random
+syn keyword fmFunctionNumber Round
+syn keyword fmFunctionNumber SetPrecision
+syn keyword fmFunctionNumber Sign
+syn keyword fmFunctionNumber Sqrt
+syn keyword fmFunctionNumber Truncate
 
 " Category Date
-syn keyword fmFunctionDate 'Date'
-syn keyword fmFunctionDate 'Day'
-syn keyword fmFunctionDate 'DayName'
-syn keyword fmFunctionDate 'DayOfWeek'
-syn keyword fmFunctionDate 'DayOfYear'
-syn keyword fmFunctionDate 'Month'
-syn keyword fmFunctionDate 'MonthName'
-syn keyword fmFunctionDate 'WeekOfYear'
-syn keyword fmFunctionDate 'WeekOfYearFiscal'
-syn keyword fmFunctionDate 'Year'
+syn keyword fmFunctionDate Date
+syn keyword fmFunctionDate Day
+syn keyword fmFunctionDate DayName
+syn keyword fmFunctionDate DayOfWeek
+syn keyword fmFunctionDate DayOfYear
+syn keyword fmFunctionDate Month
+syn keyword fmFunctionDate MonthName
+syn keyword fmFunctionDate WeekOfYear
+syn keyword fmFunctionDate WeekOfYearFiscal
+syn keyword fmFunctionDate Year
 
 " Category Time
-syn keyword fmFunctionTime 'Hour'
-syn keyword fmFunctionTime 'Minute'
-syn keyword fmFunctionTime 'Seconds'
-syn keyword fmFunctionTime 'Time'
+syn keyword fmFunctionTime Hour
+syn keyword fmFunctionTime Minute
+syn keyword fmFunctionTime Seconds
+syn keyword fmFunctionTime Time
 
 " Category Timestamp
-syn keyword fmFunctionTimestamp 'Timestamp'
+syn keyword fmFunctionTimestamp Timestamp
 
 " Category Container
-syn keyword fmFunctionContainer 'Base64Decode'
-syn keyword fmFunctionContainer 'Base64Encode'
-syn keyword fmFunctionContainer 'Base64EncodeRFC'
-syn keyword fmFunctionContainer 'CryptAuthCode'
-syn keyword fmFunctionContainer 'CryptDecrypt'
-syn keyword fmFunctionContainer 'CryptDecryptBase64'
-syn keyword fmFunctionContainer 'CryptDigest'
-syn keyword fmFunctionContainer 'CryptEncrypt'
-syn keyword fmFunctionContainer 'CryptEncryptBase64'
-syn keyword fmFunctionContainer 'CryptGenerateSignature'
-syn keyword fmFunctionContainer 'CryptVerifySignature'
-syn keyword fmFunctionContainer 'GetContainerAttribute'
-syn keyword fmFunctionContainer 'GetHeight'
-syn keyword fmFunctionContainer 'GetThumbnail'
-syn keyword fmFunctionContainer 'GetWidth'
-syn keyword fmFunctionContainer 'HexDecode'
-syn keyword fmFunctionContainer 'HexEncode'
-syn keyword fmFunctionContainer 'TextDecode'
-syn keyword fmFunctionContainer 'TextEncode'
-syn keyword fmFunctionContainer 'VerifyContainer'
+syn keyword fmFunctionContainer Base64Decode
+syn keyword fmFunctionContainer Base64Encode
+syn keyword fmFunctionContainer Base64EncodeRFC
+syn keyword fmFunctionContainer CryptAuthCode
+syn keyword fmFunctionContainer CryptDecrypt
+syn keyword fmFunctionContainer CryptDecryptBase64
+syn keyword fmFunctionContainer CryptDigest
+syn keyword fmFunctionContainer CryptEncrypt
+syn keyword fmFunctionContainer CryptEncryptBase64
+syn keyword fmFunctionContainer CryptGenerateSignature
+syn keyword fmFunctionContainer CryptVerifySignature
+syn keyword fmFunctionContainer GetContainerAttribute
+syn keyword fmFunctionContainer GetHeight
+syn keyword fmFunctionContainer GetThumbnail
+syn keyword fmFunctionContainer GetWidth
+syn keyword fmFunctionContainer HexDecode
+syn keyword fmFunctionContainer HexEncode
+syn keyword fmFunctionContainer TextDecode
+syn keyword fmFunctionContainer TextEncode
+syn keyword fmFunctionContainer VerifyContainer
 
 " Category Japanese
-syn keyword fmFunctionJapanese 'DayNameJ'
-syn keyword fmFunctionJapanese 'Furigana'
-syn keyword fmFunctionJapanese 'Hiragana'
-syn keyword fmFunctionJapanese 'KanaHankaku'
-syn keyword fmFunctionJapanese 'KanaZenkaku'
-syn keyword fmFunctionJapanese 'KanjiNumeral'
-syn keyword fmFunctionJapanese 'Katakana'
-syn keyword fmFunctionJapanese 'MonthNameJ'
-syn keyword fmFunctionJapanese 'NumToJText'
-syn keyword fmFunctionJapanese 'RomanHankaku'
-syn keyword fmFunctionJapanese 'RomanZenkaku'
-syn keyword fmFunctionJapanese 'YearName'
+syn keyword fmFunctionJapanese DayNameJ
+syn keyword fmFunctionJapanese Furigana
+syn keyword fmFunctionJapanese Hiragana
+syn keyword fmFunctionJapanese KanaHankaku
+syn keyword fmFunctionJapanese KanaZenkaku
+syn keyword fmFunctionJapanese KanjiNumeral
+syn keyword fmFunctionJapanese Katakana
+syn keyword fmFunctionJapanese MonthNameJ
+syn keyword fmFunctionJapanese NumToJText
+syn keyword fmFunctionJapanese RomanHankaku
+syn keyword fmFunctionJapanese RomanZenkaku
+syn keyword fmFunctionJapanese YearName
 
 " Category JSON
-syn keyword fmFunctionJSON 'JSONDeleteElement'
-syn keyword fmFunctionJSON 'JSONFormatElements'
-syn keyword fmFunctionJSON 'JSONGetElement'
-syn keyword fmFunctionJSON 'JSONListKeys'
-syn keyword fmFunctionJSON 'JSONListValues'
-syn keyword fmFunctionJSON 'JSONSetElement'
+syn keyword fmFunctionJSON JSONDeleteElement
+syn keyword fmFunctionJSON JSONFormatElements
+syn keyword fmFunctionJSON JSONGetElement
+syn keyword fmFunctionJSON JSONListKeys
+syn keyword fmFunctionJSON JSONListValues
+syn keyword fmFunctionJSON JSONSetElement
 
 " Category Aggregate
-syn keyword fmFunctionAggregate 'Average'
-syn keyword fmFunctionAggregate 'Count'
-syn keyword fmFunctionAggregate 'List'
-syn keyword fmFunctionAggregate 'Max'
-syn keyword fmFunctionAggregate 'Min'
-syn keyword fmFunctionAggregate 'StDev'
-syn keyword fmFunctionAggregate 'StDevP'
-syn keyword fmFunctionAggregate 'Sum'
-syn keyword fmFunctionAggregate 'Variance'
-syn keyword fmFunctionAggregate 'VarianceP'
+syn keyword fmFunctionAggregate Average
+syn keyword fmFunctionAggregate Count
+syn keyword fmFunctionAggregate List
+syn keyword fmFunctionAggregate Max
+syn keyword fmFunctionAggregate Min
+syn keyword fmFunctionAggregate StDev
+syn keyword fmFunctionAggregate StDevP
+syn keyword fmFunctionAggregate Sum
+syn keyword fmFunctionAggregate Variance
+syn keyword fmFunctionAggregate VarianceP
 
 " Category Repeating
-syn keyword fmFunctionRepeating 'Extend'
-syn keyword fmFunctionRepeating 'GetRepetition'
-syn keyword fmFunctionRepeating 'Last'
+syn keyword fmFunctionRepeating Extend
+syn keyword fmFunctionRepeating GetRepetition
+syn keyword fmFunctionRepeating Last
 
 " Category Financial
-syn keyword fmFunctionFinancial 'FV'
-syn keyword fmFunctionFinancial 'NPV'
-syn keyword fmFunctionFinancial 'PMT'
-syn keyword fmFunctionFinancial 'PV'
+syn keyword fmFunctionFinancial FV
+syn keyword fmFunctionFinancial NPV
+syn keyword fmFunctionFinancial PMT
+syn keyword fmFunctionFinancial PV
 
 " Category Trigonometric
-syn keyword fmFunctionTrigonometric 'Acos'
-syn keyword fmFunctionTrigonometric 'Asin'
-syn keyword fmFunctionTrigonometric 'Atan'
-syn keyword fmFunctionTrigonometric 'Cos'
-syn keyword fmFunctionTrigonometric 'Degrees'
-syn keyword fmFunctionTrigonometric 'Pi'
-syn keyword fmFunctionTrigonometric 'Radians'
-syn keyword fmFunctionTrigonometric 'Sin'
-syn keyword fmFunctionTrigonometric 'Tan'
+syn keyword fmFunctionTrigonometric Acos
+syn keyword fmFunctionTrigonometric Asin
+syn keyword fmFunctionTrigonometric Atan
+syn keyword fmFunctionTrigonometric Cos
+syn keyword fmFunctionTrigonometric Degrees
+syn keyword fmFunctionTrigonometric Pi
+syn keyword fmFunctionTrigonometric Radians
+syn keyword fmFunctionTrigonometric Sin
+syn keyword fmFunctionTrigonometric Tan
 
 " Category Logical
-syn keyword fmFunctionLogical 'Case'
-syn keyword fmFunctionLogical 'Choose'
-syn keyword fmFunctionLogical 'Evaluate'
-syn keyword fmFunctionLogical 'EvaluationError'
-syn keyword fmFunctionLogical 'ExecuteSQL'
-syn keyword fmFunctionLogical 'GetAsBoolean'
-syn keyword fmFunctionLogical 'GetField'
-syn keyword fmFunctionLogical 'GetNthRecord'
-syn keyword fmFunctionLogical 'GetSummary'
+syn keyword fmFunctionLogical Case
+syn keyword fmFunctionLogical Choose
+syn keyword fmFunctionLogical Evaluate
+syn keyword fmFunctionLogical EvaluationError
+syn keyword fmFunctionLogical ExecuteSQL
+syn keyword fmFunctionLogical GetAsBoolean
+syn keyword fmFunctionLogical GetField
+syn keyword fmFunctionLogical GetNthRecord
+syn keyword fmFunctionLogical GetSummary
 syn keyword fmFunctionLogical If
-syn keyword fmFunctionLogical 'IsEmpty'
-syn keyword fmFunctionLogical 'IsValid'
-syn keyword fmFunctionLogical 'IsValidExpression'
-syn keyword fmFunctionLogical 'Let'
-syn keyword fmFunctionLogical 'Lookup'
-syn keyword fmFunctionLogical 'LookupNext'
-syn keyword fmFunctionLogical 'Self'
-syn keyword fmFunctionLogical 'SetRecursion'
-syn keyword fmFunctionLogical 'While'
+syn keyword fmFunctionLogical IsEmpty
+syn keyword fmFunctionLogical IsValid
+syn keyword fmFunctionLogical IsValidExpression
+syn keyword fmFunctionLogical Let
+syn keyword fmFunctionLogical Lookup
+syn keyword fmFunctionLogical LookupNext
+syn keyword fmFunctionLogical Self
+syn keyword fmFunctionLogical SetRecursion
+syn keyword fmFunctionLogical While
 
 " Category Miscellaneous
-syn keyword fmFunctionMiscellaneous 'GetFieldName'
-syn keyword fmFunctionMiscellaneous 'GetLayoutObjectAttribute'
+syn keyword fmFunctionMiscellaneous GetFieldName
+syn keyword fmFunctionMiscellaneous GetLayoutObjectAttribute
 
 " Category Get
 syn keyword fmFunctionGet 'Get(AccountExtendedPrivileges)'
@@ -530,34 +530,34 @@ syn keyword fmFunctionGet 'Get(WindowWidth)'
 syn keyword fmFunctionGet 'Get(WindowZoomLevel)'
 
 " Category Design
-syn keyword fmFunctionDesign 'DatabaseNames'
-syn keyword fmFunctionDesign 'FieldBounds'
-syn keyword fmFunctionDesign 'FieldComment'
-syn keyword fmFunctionDesign 'FieldIDs'
-syn keyword fmFunctionDesign 'FieldNames'
-syn keyword fmFunctionDesign 'FieldRepetitions'
-syn keyword fmFunctionDesign 'FieldStyle'
-syn keyword fmFunctionDesign 'FieldType'
-syn keyword fmFunctionDesign 'GetNextSerialValue'
-syn keyword fmFunctionDesign 'LayoutIDs'
-syn keyword fmFunctionDesign 'LayoutNames'
-syn keyword fmFunctionDesign 'LayoutObjectNames'
-syn keyword fmFunctionDesign 'RelationInfo'
-syn keyword fmFunctionDesign 'ScriptIDs'
-syn keyword fmFunctionDesign 'ScriptNames'
-syn keyword fmFunctionDesign 'TableIDs'
-syn keyword fmFunctionDesign 'TableNames'
-syn keyword fmFunctionDesign 'ValueListIDs'
-syn keyword fmFunctionDesign 'ValueListItems'
-syn keyword fmFunctionDesign 'ValueListNames'
-syn keyword fmFunctionDesign 'WindowNames'
+syn keyword fmFunctionDesign DatabaseNames
+syn keyword fmFunctionDesign FieldBounds
+syn keyword fmFunctionDesign FieldComment
+syn keyword fmFunctionDesign FieldIDs
+syn keyword fmFunctionDesign FieldNames
+syn keyword fmFunctionDesign FieldRepetitions
+syn keyword fmFunctionDesign FieldStyle
+syn keyword fmFunctionDesign FieldType
+syn keyword fmFunctionDesign GetNextSerialValue
+syn keyword fmFunctionDesign LayoutIDs
+syn keyword fmFunctionDesign LayoutNames
+syn keyword fmFunctionDesign LayoutObjectNames
+syn keyword fmFunctionDesign RelationInfo
+syn keyword fmFunctionDesign ScriptIDs
+syn keyword fmFunctionDesign ScriptNames
+syn keyword fmFunctionDesign TableIDs
+syn keyword fmFunctionDesign TableNames
+syn keyword fmFunctionDesign ValueListIDs
+syn keyword fmFunctionDesign ValueListItems
+syn keyword fmFunctionDesign ValueListNames
+syn keyword fmFunctionDesign WindowNames
 
 " Category Mobile
-syn keyword fmFunctionMobile 'GetAVPlayerAttribute'
-syn keyword fmFunctionMobile 'GetSensor'
-syn keyword fmFunctionMobile 'Location'
-syn keyword fmFunctionMobile 'LocationValues'
-syn keyword fmFunctionMobile 'RangeBeacons'
+syn keyword fmFunctionMobile GetAVPlayerAttribute
+syn keyword fmFunctionMobile GetSensor
+syn keyword fmFunctionMobile Location
+syn keyword fmFunctionMobile LocationValues
+syn keyword fmFunctionMobile RangeBeacons
 
 let b:current_syntax = "fmp"
 
