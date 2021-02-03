@@ -208,7 +208,7 @@ syn match fmScriptMiscellaneous 'Show Custom Dialog'
 syn match fmScriptMiscellaneous 'Speak'
 
 " FileMaker Calculation Functions
-" CATEGORY Text
+" Category Text
 syn match fmFunctionLogical 'Char'
 syn match fmFunctionLogical 'Code'
 syn match fmFunctionLogical 'Exact'
@@ -249,7 +249,7 @@ syn match fmFunctionLogical 'Upper'
 syn match fmFunctionLogical 'ValueCount'
 syn match fmFunctionLogical 'WordCount'
 
-" CATEGORY TextFormatting
+" Category TextFormatting
 syn match fmFunctionTextFormatting 'RGB'
 syn match fmFunctionTextFormatting 'TextColor'
 syn match fmFunctionTextFormatting 'TextColorRemove'
@@ -261,7 +261,7 @@ syn match fmFunctionTextFormatting 'TextSizeRemove'
 syn match fmFunctionTextFormatting 'TextStyleAdd'
 syn match fmFunctionTextFormatting 'TextStyleRemove'
 
-" CATEGORY Number
+" Category Number
 syn match fmFunctionNumber 'Abs'
 syn match fmFunctionNumber 'Ceiling'
 syn match fmFunctionNumber 'Combination'
@@ -281,7 +281,7 @@ syn match fmFunctionNumber 'Sign'
 syn match fmFunctionNumber 'Sqrt'
 syn match fmFunctionNumber 'Truncate'
 
-" CATEGORY Date
+" Category Date
 syn match fmFunctionDate 'Date'
 syn match fmFunctionDate 'Day'
 syn match fmFunctionDate 'DayName'
@@ -293,16 +293,16 @@ syn match fmFunctionDate 'WeekOfYear'
 syn match fmFunctionDate 'WeekOfYearFiscal'
 syn match fmFunctionDate 'Year'
 
-" CATEGORY Time
+" Category Time
 syn match fmFunctionTime 'Hour'
 syn match fmFunctionTime 'Minute'
 syn match fmFunctionTime 'Seconds'
 syn match fmFunctionTime 'Time'
 
-" CATEGORY Timestamp
+" Category Timestamp
 syn match fmFunctionTimestamp 'Timestamp'
 
-" CATEGORY Container
+" Category Container
 syn match fmFunctionContainer 'Base64Decode'
 syn match fmFunctionContainer 'Base64Encode'
 syn match fmFunctionContainer 'Base64EncodeRFC'
@@ -324,7 +324,7 @@ syn match fmFunctionContainer 'TextDecode'
 syn match fmFunctionContainer 'TextEncode'
 syn match fmFunctionContainer 'VerifyContainer'
 
-" CATEGORY Japanese
+" Category Japanese
 syn match fmFunctionJapanese 'DayNameJ'
 syn match fmFunctionJapanese 'Furigana'
 syn match fmFunctionJapanese 'Hiragana'
@@ -338,7 +338,7 @@ syn match fmFunctionJapanese 'RomanHankaku'
 syn match fmFunctionJapanese 'RomanZenkaku'
 syn match fmFunctionJapanese 'YearName'
 
-" CATEGORY JSON
+" Category JSON
 syn match fmFunctionJSON 'JSONDeleteElement'
 syn match fmFunctionJSON 'JSONFormatElements'
 syn match fmFunctionJSON 'JSONGetElement'
@@ -346,7 +346,7 @@ syn match fmFunctionJSON 'JSONListKeys'
 syn match fmFunctionJSON 'JSONListValues'
 syn match fmFunctionJSON 'JSONSetElement'
 
-" CATEGORY Aggregate
+" Category Aggregate
 syn match fmFunctionAggregate 'Average'
 syn match fmFunctionAggregate 'Count'
 syn match fmFunctionAggregate 'List'
@@ -358,18 +358,18 @@ syn match fmFunctionAggregate 'Sum'
 syn match fmFunctionAggregate 'Variance'
 syn match fmFunctionAggregate 'VarianceP'
 
-" CATEGORY Repeating
+" Category Repeating
 syn match fmFunctionRepeating 'Extend'
 syn match fmFunctionRepeating 'GetRepetition'
 syn match fmFunctionRepeating 'Last'
 
-" CATEGORY Financial
+" Category Financial
 syn match fmFunctionFinancial 'FV'
 syn match fmFunctionFinancial 'NPV'
 syn match fmFunctionFinancial 'PMT'
 syn match fmFunctionFinancial 'PV'
 
-" CATEGORY Trigonometric
+" Category Trigonometric
 syn match fmFunctionTrigonometric 'Acos'
 syn match fmFunctionTrigonometric 'Asin'
 syn match fmFunctionTrigonometric 'Atan'
@@ -380,7 +380,7 @@ syn match fmFunctionTrigonometric 'Radians'
 syn match fmFunctionTrigonometric 'Sin'
 syn match fmFunctionTrigonometric 'Tan'
 
-" CATEGORY Logical
+" Category Logical
 syn match fmFunctionLogical 'Case'
 syn match fmFunctionLogical 'Choose'
 syn match fmFunctionLogical 'Evaluate'
@@ -401,11 +401,11 @@ syn match fmFunctionLogical 'Self'
 syn match fmFunctionLogical 'SetRecursion'
 syn match fmFunctionLogical 'While'
 
-" CATEGORY Miscellaneous
+" Category Miscellaneous
 syn match fmFunctionMiscellaneous 'GetFieldName'
 syn match fmFunctionMiscellaneous 'GetLayoutObjectAttribute'
 
-" CATEGORY Get
+" Category Get
 syn match fmFunctionGet 'Get(AccountExtendedPrivileges)'
 syn match fmFunctionGet 'Get(AccountGroupName)'
 syn match fmFunctionGet 'Get(AccountName)'
@@ -529,7 +529,7 @@ syn match fmFunctionGet 'Get(WindowVisible)'
 syn match fmFunctionGet 'Get(WindowWidth)'
 syn match fmFunctionGet 'Get(WindowZoomLevel)'
 
-" CATEGORY Design
+" Category Design
 syn match fmFunctionDesign 'DatabaseNames'
 syn match fmFunctionDesign 'FieldBounds'
 syn match fmFunctionDesign 'FieldComment'
@@ -552,7 +552,7 @@ syn match fmFunctionDesign 'ValueListItems'
 syn match fmFunctionDesign 'ValueListNames'
 syn match fmFunctionDesign 'WindowNames'
 
-" CATEGORY Mobile
+" Category Mobile
 syn match fmFunctionMobile 'GetAVPlayerAttribute'
 syn match fmFunctionMobile 'GetSensor'
 syn match fmFunctionMobile 'Location'
