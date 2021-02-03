@@ -7,10 +7,32 @@ if exists("b:current_syntax")
 	finish
 endif
 
-" Comments
+" Numbers
+syntax match fmNumeric '\<-\?[1-9]\d*\(.[0-9]\+\)\?\>'
 
+" Comments
+syntax match fmScriptComment '#\s.*'
+syntax match fmFunctionComment '\/\/.*$'
+syntax region fmFunctionCommentMultiLine start='\/\*' end='\*\/'
+
+" Operators
+syntax match fmOperatorArithmetic '\(+\|-\|*\|\/\)'
+syntax match fmOperatorLogical '\<\(xor\|and\|or\|not\)\>'
+syntax match fmOperatorComparison '\(=\|<=\|≤\|>=\|≥\|<>\|!=\|≠\|<\|>\)'
+syntax keyword fmOperatorString &
 
 " Variables/Identifiers
+syntax match fmScriptVariableLocal '\$[a-zA-Z_][a-zA-Z0-9_]*\>'
+syntax match fmScriptVariableGlobal '\$\$[a-zA-Z_][a-zA-Z0-9_]*\>'
+" TODO: need to find a way to not trigger '=',
+" not match local or global variables
+" as well as escape within strings
+syntax match fmFunctionVariable '[^\$][a-zA-Z_][a-zA-Z0-9_]*\s\?='
+
+" Strings
+syntax region fmString start='"' end='"'
+
+" Bracket Pairing
 
 
 " FileMaker Script Steps
@@ -423,6 +445,22 @@ syntax keyword fmFunctionMobile LocationValues RangeBeacons
 
 let b:current_syntax = "fmp"
 
+hi def link fmNumeric Number
+
+hi def link fmOperatorArithmetic Operator
+hi def link fmOperatorLogical Operator
+hi def link mOperatorComparison Operator
+hi def link mOperatorString Operator
+
+hi def link fmScriptVariableLocal Identifier
+hi def link fmScriptVariableGlobal Identifier
+
+hi def link fmScriptComment Comment
+hi def link fmFunctionComment Comment
+hi def link fmFunctionCommentMultiLine Comment
+
+hi def link fmString String
+
 hi def link fmScriptControl Conditional
 hi def link fmScriptNavigation Statement
 hi def link fmScriptEditing Statement
@@ -454,3 +492,4 @@ hi def link fmFunctionTextFormatting Function
 hi def link fmFunctionTime Function
 hi def link fmFunctionTimestamp Function
 hi def link fmFunctionTrigonometric Function
+
