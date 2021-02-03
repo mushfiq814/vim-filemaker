@@ -37,6 +37,9 @@ syntax region fmString start='"' end='"'
 " Bracket Pairing
 
 
+" Table and field names
+
+
 " FileMaker Script Steps
 " Category Control
 syntax match fmScriptControl 'Set Variable'
