@@ -3,9 +3,9 @@
 " Maintainer: Mushfiq Mahmud
 " Latest Revision: Feb 2, 2021
 
-if exists("b:current_syntax")
-	finish
-endif
+" if exists("b:current_syntax")
+" 	finish
+" endif
 
 " Numbers
 syntax match fmNumeric '\<-\?[1-9]\d*\(.[0-9]\+\)\?\>'
@@ -445,19 +445,19 @@ syntax keyword fmFunctionMobile LocationValues RangeBeacons
 
 let b:current_syntax = "fmp"
 
+hi def link fmScriptComment Comment
+hi def link fmFunctionComment Comment
+hi def link fmFunctionCommentMultiLine Comment
+
 hi def link fmNumeric Number
 
 hi def link fmOperatorArithmetic Operator
 hi def link fmOperatorLogical Operator
-hi def link mOperatorComparison Operator
-hi def link mOperatorString Operator
+hi def link fmOperatorComparison Operator
+hi def link fmOperatorString Operator
 
 hi def link fmScriptVariableLocal Identifier
 hi def link fmScriptVariableGlobal Identifier
-
-hi def link fmScriptComment Comment
-hi def link fmFunctionComment Comment
-hi def link fmFunctionCommentMultiLine Comment
 
 hi def link fmString String
 
