@@ -279,6 +279,7 @@ syn keyword fmFunctionLogical LookupNext Self SetRecursion While
 syn keyword fmFunctionMiscellaneous GetFieldName GetLayoutObjectAttribute
 
 " Category Get
+syn match fmFunctionGet 'Get\(\w\+\)'
 syn keyword fmFunctionGetConstant AccountExtendedPrivileges
 syn keyword fmFunctionGetConstant AccountGroupName
 syn keyword fmFunctionGetConstant AccountName
@@ -434,7 +435,8 @@ hi def link fmFunctionContainer Function
 hi def link fmFunctionDate Function
 hi def link fmFunctionDesign Function
 hi def link fmFunctionFinancial Function
-hi def link fmFunctionGet Function
+hi def link fmFunctionGet Statement
+hi def link fmFunctionGetConstant Function
 hi def link fmFunctionJSON Function
 hi def link fmFunctionJapanese Function
 hi def link fmFunctionLogical Function
