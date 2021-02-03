@@ -1,0 +1,34 @@
+# This is a comment if you didn't know
+Set Error Capture [On]
+
+# Script Keywords
+Set Variable [$dummy; "Howdy"]
+
+Perform Find [Restore]
+If [Get (FoundCount) = 0]
+	Show Custom Dialog ["Find Records"; "No record was found."]
+Else If [Get (FoundCount) = 1]
+	Go to Layout ["Invoice Details"]
+Else
+	Go to Layout ["Invoices"]
+End If
+
+# Function Keywords
+Set Variable [$calc; Value: Let ([ // this is also a comment
+	/*
+	 * Multi
+	 * line
+	 * comment
+	 */
+	a = Evaluate(
+		"Let (["
+			& Get(ScriptParameter) & "
+		]; a)"
+	),
+	b = Evaluate(
+		"Let ([" // strings
+			& Get(ScriptParameter) & "
+		];
+		b)"
+	)
+]; a+1 & ", " & b+2)]
