@@ -16,6 +16,7 @@ syntax region fmFunctionCommentMultiLine start='\/\*' end='\*\/'
 syntax match fmNumeric '-\?[1-9]\d*\(.[0-9]\+\)\?\>'
 
 " Operators
+" TODO: division symbol '/' seems to be messing with comments
 " syntax match fmOperatorArithmetic '\(+\|-\|*\|\/\)'
 syntax match fmOperatorArithmetic '\(+\|-\|*\)'
 syntax match fmOperatorLogical '\<\(xor\|and\|or\|not\)\>'
